@@ -4,12 +4,14 @@
 * * * * *
 * * * * *
 * * * * *
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<n;j++){
-    cout<<"* ";
+    for(int j=0;j<n;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 2
 * 
@@ -17,12 +19,14 @@ for(int i=0;i<n;i++){
 * * * 
 * * * * 
 * * * * *
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<"* ";
+    for(int j=0;j<=i;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # patter 3
 1
@@ -30,12 +34,14 @@ for(int i=0;i<n;i++){
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<j+1<<" ";
+    for(int j=0;j<=i;j++){
+        cout<<j+1<<" ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 4
 1
@@ -43,12 +49,14 @@ for(int i=0;i<n;i++){
 3 3 3 
 4 4 4 4 
 5 5 5 5 5
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<i+1<<" ";
+   for(int j=0;j<=i;j++){
+       cout<<i+1<<" ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 5
 * * * * *
@@ -56,12 +64,14 @@ for(int i=0;i<n;i++){
 * * * 
 * *  
 *
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<n-i;j++){
-    cout<<"* ";
+   for(int j=0;j<n-i;j++){
+       cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 6
 1 2 3 4 5
@@ -69,12 +79,14 @@ for(int i=0;i<n;i++){
 1 2 3 
 1 2  
 1 
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<n-i;j++){
-    cout<<j+1<<" ";
+    for(int j=0;j<n-i;j++){
+        cout<<j+1<<" ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 7
     *
@@ -82,15 +94,17 @@ for(int i=0;i<n;i++){
   *****
  *******
 *********
+
 for(int i=0;i<n;i++){
-  for(int j=1;j<n-i;j++){
-    cout<<" ";
+    for(int j=1;j<n-i;j++){
+        cout<<" ";
     }
-  for(int j=0;j<((2*i)+1);j++){
-    cout<<"*";
+    for(int j=0;j<((2*i)+1);j++){
+        cout<<"*";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 8
 *********
@@ -98,15 +112,17 @@ for(int i=0;i<n;i++){
   *****
    ***
     *
+    
 for(int i=0;i<n;i++){
-  for(int j=0;j<i;j++){
-    cout<<" ";
+    for(int j=0;j<i;j++){
+        cout<<" ";
     }
-   for(int j=0;j<((2*n)-((2*i)+1));j++){
-    cout<<"*";
+    for(int j=0;j<((2*n)-((2*i)+1));j++){
+        cout<<"*";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 9
     *
@@ -119,24 +135,26 @@ for(int i=0;i<n;i++){
   * * *
    * *
     *
+
 for(int i=0;i<n;i++){
-  for(int j=1;j<n-i;j++){
-    cout<<" ";
+    for(int j=1;j<n-i;j++){
+        cout<<" ";
     }
-  for(int j=0;j<=i;j++){
-    cout<<"* ";
+    for(int j=0;j<=i;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
 for(int i=0;i<n;i++){
-  for(int j=0;j<i;j++){
-    cout<<" ";
+    for(int j=0;j<i;j++){
+        cout<<" ";
     }
-   for(int j=0;j<2*n - n-i;j++){
-    cout<<"* ";
+    for(int j=0;j<2*n - n-i;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 10
 * 
@@ -148,18 +166,20 @@ for(int i=0;i<n;i++){
 * * *
 * *
 *
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<"* ";
+    for(int j=0;j<=i;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
 for(int i=0;i<n;i++){
-  for(int j=0;j<n-i-1;j++){
-    cout<<"* ";
+    for(int j=0;j<n-i-1;j++){
+        cout<<"* ";
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 11
 1 
@@ -167,16 +187,18 @@ for(int i=0;i<n;i++){
 1 0 1
 0 1 0 1 
 1 0 1 0 1
+
 for(int i=0;i<n;i++){
-int start=1;
-  if(i%2==0) start=1;
-  else start=0;
-  for(int j=0;j<=i;j++){
-  cout<<start<<" ";
-  start=1-start;
-  }
-  cout<<endl;
+    int start=1;
+    if(i%2==0) start=1;
+    else start=0;
+    for(int j=0;j<=i;j++){
+        cout<<start<<" ";
+        start=1-start;
+    }
+    cout<<endl;
 }
+
 
 # pattern 12
 1                 1
@@ -184,20 +206,22 @@ int start=1;
 1 2 3         3 2 1
 1 2 3 4     4 3 2 1
 1 2 3 4 5 5 4 3 2 1
+
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<j+1<<" ";
+    for(int j=0;j<=i;j++){
+        cout<<j+1<<" ";
     } 
-  for(int j=0;j<2*n - 2*(i+1);j++){
-  cout<<"  ";
-  }
-  int x=i+1;
-  for(int j=0;j<=i;j++){
-  cout<<x<<" ";
-  x--;
-  }
-  cout<<endl;
+    for(int j=0;j<2*n - 2*(i+1);j++){
+        cout<<"  ";
+    }
+    int x=i+1;
+    for(int j=0;j<=i;j++){
+        cout<<x<<" ";
+        x--;
+    }
+    cout<<endl;
 }
+
 
 # pattern 13
 1 
@@ -205,14 +229,16 @@ for(int i=0;i<n;i++){
 4 5 6 
 7 8 9 10 
 11 12 13 14 15
+
 int x=1;
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<x<<" ";
-    x++;
+   for(int j=0;j<=i;j++){
+       cout<<x<<" ";
+       x++;
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 14
 A
@@ -220,14 +246,16 @@ AB
 ABC
 ABCD
 ABCDE
+
 for(int i=0;i<n;i++){
-  char x='A';
-  for(int j=0;j<=i;j++){
-    cout<<x;
-    x++;
+    char x='A';
+    for(int j=0;j<=i;j++){
+        cout<<x;
+        x++;
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 15
 ABCDE
@@ -235,14 +263,16 @@ ABCD
 ABC
 AB
 A
+
 for(int i=0;i<n;i++){
-  char x='A';
-  for(int j=0;j<n-i;j++){
-    cout<<x;
-    x++;
+   char x='A';
+   for(int j=0;j<n-i;j++){
+       cout<<x;
+       x++;
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 16
 A
@@ -250,38 +280,42 @@ BB
 CCC
 DDDD
 EEEEE
+
 char x='A';
 for(int i=0;i<n;i++){
-  for(int j=0;j<=i;j++){
-    cout<<x;
+    for(int j=0;j<=i;j++){
+        cout<<x;
     }
-     x++;
-  cout<<endl;
+    x++;
+    cout<<endl;
 }
+
 
 # pattern 17
    A
   ABA
  ABCBA
 ABCDCBA
+
 for(int i=0;i<n;i++){
-  for(int j=1;j<n-i;j++){
-    cout<<" ";
+    for(int j=1;j<n-i;j++){
+        cout<<" ";
     }
     char x='A';
     int b=(2*i + 1)/2;
-  for(int j=0;j<((2*i)+1);j++){
-      if(j<b){
-          cout<<x;
-          x++;
-      }
-      else{
-          cout<<x;
-          x--;
-      }
+    for(int j=0;j<((2*i)+1);j++){
+        if(j<b){
+           cout<<x;
+           x++;
+        }
+        else{
+            cout<<x;
+            x--;
+        }
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 18
 E
@@ -289,14 +323,16 @@ E D
 E D C
 E D C B
 E D C B A
+
 for(int i=0;i<n;i++){
     char c='E';
-  for(int j=0;j<=i;j++){
-    cout<<c<<" ";
-    c--;
+    for(int j=0;j<=i;j++){
+        cout<<c<<" ";
+        c--;
     }
-  cout<<endl;
+    cout<<endl;
 }
+
 
 # pattern 19
 **********
@@ -310,6 +346,32 @@ for(int i=0;i<n;i++){
 ****  ****
 **********
 
+for(int i=0;i<n;i++){
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+        }
+    for(int j=0;j<2*n - (2*(n-i));j++){
+        cout<<" ";
+        }
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+        }
+    cout<<endl;
+}
+for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+        cout<<"*";
+        }
+    for(int j=0;j<(2*(n-i-1));j++){
+        cout<<" ";
+        }
+    for(int j=0;j<=i;j++){
+        cout<<"*";
+        }
+        cout<<endl;
+}
+
+
 # pattern 20
 *        *
 **      **
@@ -320,13 +382,52 @@ for(int i=0;i<n;i++){
 ***    ***
 **      **
 *        *
-  
+
+for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+        cout<<"*";
+        }
+    for(int j=0;j<(2*(n-i-1));j++){
+        cout<<" ";
+        }
+    for(int j=0;j<=i;j++){
+        cout<<"*";
+        }
+        cout<<endl;
+}
+for(int i=1;i<n;i++){
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+    }
+    for(int j=0;j<2*i;j++){
+        cout<<" ";
+    }
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+
 # pattern 21
 ****
 *  *
 *  *
 ****
 
+for(int i=0;i<n;i++){
+    for(int j=0;j<n;j++){
+        if(i==0 || i==n-1 || j==0 || j==n-1){
+           cout<<"*";   
+        } 
+        else{
+            cout<<" ";
+         }
+      }        
+      cout<<endl;
+}
+
+        
 # pattern 22
 4 4 4 4 4 4 4
 4 3 3 3 3 3 4
@@ -335,3 +436,14 @@ for(int i=0;i<n;i++){
 4 3 2 2 2 3 4
 4 3 3 3 3 3 4
 4 4 4 4 4 4 4
+
+for(int i=0;i<2*n-1;i++){
+    for(int j=0;j<2*n-1;j++){
+        int top=i;
+        int down=(2*n-2)-i;
+        int left=j;
+        int right=(2*n-2)-j;
+        cout<<(n-min(min(top,down),min(left,right)))<<" ";
+    }
+    cout<<endl;
+}
